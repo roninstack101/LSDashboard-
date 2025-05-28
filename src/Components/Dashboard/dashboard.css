@@ -1,0 +1,227 @@
+.dashboard-container {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.dashboard-title h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.create-button {
+  height: 2.5rem;
+  width: 9rem;
+  border-radius: 0.7rem;
+  background-color: #292965;
+  color: white;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* MIDDLE FILTER HEADER */
+.dashboard-filters {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(73, 20, 141, 0.5);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-search,
+.dashboard-category,
+.dashboard-status {
+  flex: 1;
+}
+
+.dashboard-search input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.dashboard-filters select {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.dashboard-search-button {
+  flex-shrink: 0;
+}
+
+.search-btn {
+  height: 2.5rem;
+  width: 9rem;
+  border-radius: 0.7rem;
+  background-color: #292965;
+  color: white;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.dashboard-filters input,
+.dashboard-filters select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-filters input:focus,
+.dashboard-filters select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Table */
+.dashboard-main-table {
+  display: flex;
+  flex-direction: column;
+  margin: 13px 29px;
+  padding: 13px;
+  border-radius: 22px;
+  border: 0;
+  box-shadow: 0 4px 8px rgba(73, 20, 141, 0.5);
+}
+
+/* Summary Row (Title + Filters) */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+  flex-wrap: wrap;
+}
+
+.summary-name {
+  flex: 1;
+  font-size: 2vw;
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Selector Dropdown */
+#show-selector {
+  height: 2.2rem;
+  border-radius: 6px;
+  appearance: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  width: 120px;
+}
+
+/* Label for "Show" selector */
+.show-label {
+  font-size: 13px;
+  color: grey;
+  font-weight: 600;
+}
+
+/* Dispatch Button */
+.dispatch {
+  height: 2.2rem;
+  padding: 0 1rem;
+  border-radius: 7px;
+  border: none;
+  background-color: #292965;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Content Area */
+.table-content {
+  overflow-x: auto;
+}
+
+/* Table Styling */
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+.main-table th,
+.main-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.main-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.main-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Checkbox Label */
+.main-table th input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.page,
+.arrow,
+.dots {
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 13px;
+}
+
+.page:hover,
+.arrow:hover {
+  background-color: #f0f0f0;
+}
+
+.active {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.dots {
+  cursor: default;
+  color: #999;
+}
